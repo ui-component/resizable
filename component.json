@@ -2,7 +2,7 @@
   "name": "resizable",
   "repo": "ui-component/resizable",
   "description": "UI Resizable component, make any element resizable.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["resizable", "ui"],
   "dependencies": {
     "ui-component/mouse": "*",
