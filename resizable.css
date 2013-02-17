@@ -1,0 +1,115 @@
+
+/**
+ * basic stuff.
+ */
+
+.resizable .resizable-handle {
+  position: absolute;
+}
+
+/**
+ * n,
+ * s
+ */
+
+.resizable .resizable-n,
+.resizable .resizable-s {
+  cursor: ns-resize;
+  height: 8px;
+  left: 8px;
+  right: 8px;
+}
+
+.resizable .resizable-n { top: -5px; }
+.resizable .resizable-s { bottom: -5px; }
+
+/**
+ * e,
+ * w
+ */
+
+.resizable .resizable-e,
+.resizable .resizable-w {
+  cursor: ew-resize;
+  width: 8px;
+  top: 8px;
+  bottom: 8px;
+}
+
+.resizable .resizable-e { right: -5px; }
+.resizable .resizable-w { left: -5px; }
+
+/**
+ * se,
+ * ne,
+ * sw,
+ * nw
+ */
+
+.resizable .resizable-se,
+.resizable .resizable-ne,
+.resizable .resizable-sw,
+.resizable .resizable-nw {
+  width: 10px;
+  height: 10px;
+}
+
+/**
+ * se,
+ * sw
+ */
+
+.resizable .resizable-sw,
+.resizable .resizable-se {
+  bottom: -5px;
+}
+
+/**
+ * ne,
+ * nw
+ */
+
+.resizable .resizable-ne,
+.resizable .resizable-nw {
+  top: -5px;
+}
+
+/**
+ * ne,
+ * se
+ */
+
+.resizable .resizable-se,
+.resizable .resizable-ne {
+  right: -5px;
+}
+
+/**
+ * sw,
+ * nw
+ */
+
+.resizable .resizable-sw,
+.resizable .resizable-nw {
+  left: -5px;
+}
+
+/**
+ * se,
+ * nw
+ */
+
+.resizable .resizable-se,
+.resizable .resizable-nw {
+  cursor: nwse-resize;
+}
+
+/**
+ * sw,
+ * ne
+ */
+
+.resizable .resizable-sw,
+.resizable .resizable-ne {
+  cursor: nesw-resize;
+}

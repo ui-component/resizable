@@ -1,0 +1,33 @@
+<link rel='stylesheet' type='text/css' href='../build/build.css'>
+<script src='../build/build.js'></script>
+<style>
+  #resizable {
+    position: relative;
+    width: 215px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+</style>
+
+<div id='resizable'>
+</div>
+<button id='build'>Make Resizable</button>
+<button id='destroy'>Destroy Resizable</button>
+
+<script>
+var resizable = require('resizable')(document.getElementById('resizable'));
+var make = document.getElementById('build');
+var destroy = document.getElementById('destroy');
+
+make.onclick = function(){
+  resizable.el.style.border = '1px solid #999';
+  resizable.build();
+};
+
+destroy.onclick = function(){
+  resizable.el.style.border = '1px solid #ddd';
+  resizable.destroy();
+};
+
+</script>
