@@ -1,5 +1,13 @@
 
 /**
+ * disable selection.
+ */
+
+.resizable {
+  user-select: none;
+}
+
+/**
  * basic stuff.
  */
 

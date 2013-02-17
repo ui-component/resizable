@@ -88,6 +88,7 @@ Resizable.prototype.build = function(){
  */
 
 Resizable.prototype.onmousedown = function(e){
+  e.preventDefault();
   if (e.target.__axis) {
     this.axis = e.target.__axis;
     var styles = window.getComputedStyle(this.el);
