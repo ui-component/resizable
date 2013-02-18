@@ -89,6 +89,7 @@ Resizable.prototype.build = function(){
 
 Resizable.prototype.onmousedown = function(e){
   if (e.target.__axis) {
+    this.emit('start');
     e.preventDefault();
     e.stopImmediatePropagation();
     this.axis = e.target.__axis;
@@ -110,6 +111,7 @@ Resizable.prototype.onmousedown = function(e){
 
 Resizable.prototype.onmousemove = function(e){
   if (this.resizing) {
+    this.emit('resize');
     var fn = resize[this.axis];
     var x = (e.pageX - this.x) || 0;
     var y = (e.pageY - this.y) || 0;
@@ -129,6 +131,7 @@ Resizable.prototype.onmousemove = function(e){
 Resizable.prototype.onmouseup = function(e){
   this.classes.remove('resizable-resizing');
   this.resizing = null;
+  this.emit('end');
 };
 
 /**
