@@ -11,7 +11,7 @@ var merge = require('merge');
 
 exports.e = function(_, o){
   return {
-    width: this.w + o.x
+    width: this.w + o.x + 'px'
   };
 };
 
@@ -21,8 +21,8 @@ exports.e = function(_, o){
 
 exports.w = function(_, o){
   return {
-    left: this.left + o.x,
-    width: this.w - o.x
+    left: this.left + o.x + 'px',
+    width: this.w - o.x + 'px'
   };
 };
 
@@ -32,8 +32,8 @@ exports.w = function(_, o){
 
 exports.n = function(_, o){
   return {
-    top: this.top + o.y,
-    height: this.h - o.y
+    top: this.top + o.y + 'px',
+    height: this.h - o.y + 'px'
   };
 };
 
@@ -43,7 +43,7 @@ exports.n = function(_, o){
 
 exports.s = function(_, o){
   return {
-    height: this.h + o.y
+    height: this.h + o.y + 'px'
   };
 };
 
