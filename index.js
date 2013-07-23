@@ -22,7 +22,7 @@ module.exports = function(el, opts){
 
 /**
  * initialize new `Resizable`.
- * 
+ *
  * @param {Element} el
  * @param {Object} opts
  */
@@ -44,7 +44,7 @@ emitter(Resizable.prototype);
 
 /**
  * build resizable.
- * 
+ *
  * @return {Resizable}
  */
 
@@ -69,7 +69,7 @@ Resizable.prototype.build = function(){
   // append handles
   for (var i = 0; i < len; ++i) {
     cname = ' resizable-' + all[i];
-    axis = domify(tpl)[0];
+    axis = domify(tpl);
     axis.className += cname;
     axis.__axis = all[i];
     this.els.push(axis);
